@@ -1,0 +1,38 @@
+
+:root{
+  --brand:#9b2c2c; /* rojo vino */
+  --brand-2:#f6ad55; /* naranja suave */
+  --text:#1f2937;
+  --mute:#6b7280;
+  --bg:#fffdf8;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;font-family:Inter,system-ui,Segoe UI,Arial,sans-serif;color:var(--text);background:var(--bg)}
+.container{max-width:1100px;margin:0 auto;padding:24px}
+nav{display:flex;align-items:center;justify-content:space-between;padding:14px 24px;background:#ffffffcc;backdrop-filter: blur(6px);position:sticky;top:0;border-bottom:1px solid #f3f4f6;z-index:10}
+nav .brand{display:flex;gap:12px;align-items:center}
+nav img{height:36px;width:auto}
+nav a{color:var(--text);text-decoration:none;margin-left:16px;font-weight:600}
+.hero{display:grid;grid-template-columns:1.1fr 0.9fr;gap:24px;align-items:center;padding:48px 24px}
+.hero h1{font-size:44px;line-height:1.1;margin:0 0 12px}
+.hero p{font-size:18px;color:var(--mute)}
+.btn{display:inline-block;padding:14px 18px;border-radius:12px;border:2px solid var(--brand);background:var(--brand);color:#fff;font-weight:700;text-decoration:none}
+.btn.secondary{background:#fff;color:var(--brand)}
+.badge{font-size:12px;background:var(--brand-2);padding:6px 10px;border-radius:999px;font-weight:700;color:#7c2d12;margin-bottom:10px;display:inline-block}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:#fff;border:1px solid #f3f4f6;border-radius:16px;overflow:hidden;box-shadow:0 4px 14px rgba(0,0,0,.04)}
+.card img{width:100%;height:180px;object-fit:cover}
+.card .p{padding:16px}
+.section{padding:48px 24px}
+.section h2{font-size:32px;margin:0 0 8px}
+.section p.lead{color:var(--mute);margin:0 0 18px}
+.menu-item{display:flex;justify-content:space-between;border-bottom:1px dashed #e5e7eb;padding:10px 0}
+.testimonials{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.quote{background:#fff;border:1px solid #f3f4f6;border-radius:16px;padding:16px;color:#111827}
+.cta{background:var(--brand);color:#fff;border-radius:20px;display:flex;align-items:center;justify-content:space-between;gap:18px;padding:28px}
+.cta h3{margin:0;font-size:26px}
+footer{padding:24px;color:#6b7280;text-align:center}
+@media (max-width:900px){
+  .hero{grid-template-columns:1fr}
+  .grid-3, .testimonials{grid-template-columns:1fr}
+}
