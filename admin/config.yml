@@ -26,22 +26,45 @@ collections:
               - {label: Link WhatsApp (wa.me...), name: cta_link, widget: string}
               - {label: Imagen Hero, name: image, widget: image, allow_multiple: false}
           - label: "Menú"
-            name: "menu"
-            widget: "object"
-            fields:
-              - label: "Items"
-                name: "items"
-                widget: "list"
-                fields:
-                  - {label: Nombre, name: name, widget: string}
-                  - {label: Descripción, name: description, widget: string, required: false}
-                  - {label: Precio (número), name: price, widget: number, value_type: float}
-          - label: "Testimonios"
-            name: "testimonials"
-            widget: "list"
-            fields:
-              - {label: Autor, name: author, widget: string}
-              - {label: Texto, name: text, widget: text}
+  name: "menu"
+  widget: "object"
+  fields:
+    - label: "Café"
+      name: "cafe"
+      widget: "object"
+      fields:
+        - { label: "Imagen de la card", name: card_image, widget: image, allow_multiple: false }
+        - label: "Items"
+          name: "items"
+          widget: "list"
+          fields:
+            - { label: Nombre, name: name, widget: string }
+            - { label: Descripción, name: description, widget: string, required: false }
+            - { label: Precio (número), name: price, widget: number, value_type: float }
+    - label: "Pastelería"
+      name: "pasteleria"
+      widget: "object"
+      fields:
+        - { label: "Imagen de la card", name: card_image, widget: image, allow_multiple: false }
+        - label: "Items"
+          name: "items"
+          widget: "list"
+          fields:
+            - { label: Nombre, name: name, widget: string }
+            - { label: Descripción, name: description, widget: string, required: false }
+            - { label: Precio (número), name: price, widget: number, value_type: float }
+    - label: "Brunch"
+      name: "brunch"
+      widget: "object"
+      fields:
+        - { label: "Imagen de la card", name: card_image, widget: image, allow_multiple: false }
+        - label: "Items"
+          name: "items"
+          widget: "list"
+          fields:
+            - { label: Nombre, name: name, widget: string }
+            - { label: Descripción, name: description, widget: string, required: false }
+            - { label: Precio (número), name: price, widget: number, value_type: float }
           - label: "Horarios"
             name: "hours"
             widget: "object"
