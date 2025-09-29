@@ -1,0 +1,57 @@
+{
+  "hero": {
+    "title": "Café de especialidad & pastelería fresca",
+    "subtitle": "Hecho en Neuquén, con granos seleccionados y recetas caseras.",
+    "cta_text": "Reservar por WhatsApp",
+    "cta_link": "https://wa.me/5492990000000?text=Hola%20Aroma%2C%20quiero%20hacer%20una%20reserva",
+    "image": "/static/img/hero.jpg"
+  },
+  "menu": {
+    "items": [
+      {
+        "name": "Espresso Doble",
+        "description": "Blend de la casa",
+        "price": 3200
+      },
+      {
+        "name": "Capuccino",
+        "description": "Con espuma perfecta",
+        "price": 3800
+      },
+      {
+        "name": "Medialunas x2",
+        "description": "Manteca / Grasa",
+        "price": 2800
+      },
+      {
+        "name": "Brunch Aroma",
+        "description": "Tostadas, huevos, jugo y café",
+        "price": 8900
+      }
+    ]
+  },
+  "testimonials": [
+    {
+      "author": "Lucía P.",
+      "text": "El mejor capuccino del centro. Atención 10/10."
+    },
+    {
+      "author": "Julián M.",
+      "text": "Las medialunas salen siempre calentitas. Volveré!"
+    }
+  ],
+  "hours": {
+    "weekdays": "Lun–Vie 08:00–20:00",
+    "saturday": "Sáb 09:00–20:00",
+    "sunday": "Dom 09:00–13:00"
+  },
+  "contact": {
+    "address": "Av. Siempreviva 123",
+    "city": "Neuquén, Argentina",
+    "phone": "+54 9 299 000 0000",
+    "email": "hola@aromacoffee.com",
+    "map_embed_url": "https://www.google.com/maps/embed?...",
+    "instagram": "https://instagram.com/aroma",
+    "facebook": "https://facebook.com/aroma"
+  }
+}

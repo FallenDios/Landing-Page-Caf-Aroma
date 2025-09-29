@@ -1,0 +1,62 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "static/img"
+public_folder: "/static/img"
+
+site_url: "/"
+logo_url: "/static/img/logo.png"
+
+collections:
+  - name: "site"
+    label: "Contenido del sitio"
+    files:
+      - file: "content/site.json"
+        label: "Aroma Coffee Bar"
+        name: "aroma"
+        fields:
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - {label: Título, name: title, widget: string}
+              - {label: Subtítulo, name: subtitle, widget: string}
+              - {label: Texto CTA, name: cta_text, widget: string}
+              - {label: Link WhatsApp (wa.me...), name: cta_link, widget: string}
+              - {label: Imagen Hero, name: image, widget: image, allow_multiple: false}
+          - label: "Menú"
+            name: "menu"
+            widget: "object"
+            fields:
+              - label: "Items"
+                name: "items"
+                widget: "list"
+                fields:
+                  - {label: Nombre, name: name, widget: string}
+                  - {label: Descripción, name: description, widget: string, required: false}
+                  - {label: Precio (número), name: price, widget: number, value_type: float}
+          - label: "Testimonios"
+            name: "testimonials"
+            widget: "list"
+            fields:
+              - {label: Autor, name: author, widget: string}
+              - {label: Texto, name: text, widget: text}
+          - label: "Horarios"
+            name: "hours"
+            widget: "object"
+            fields:
+              - {label: Lunes a Viernes, name: weekdays, widget: string}
+              - {label: Sábado, name: saturday, widget: string, required: false}
+              - {label: Domingo/Feriados, name: sunday, widget: string, required: false}
+          - label: "Ubicación & Contacto"
+            name: "contact"
+            widget: "object"
+            fields:
+              - {label: Dirección, name: address, widget: string}
+              - {label: Ciudad, name: city, widget: string}
+              - {label: Teléfono, name: phone, widget: string, required: false}
+              - {label: Email, name: email, widget: string, required: false}
+              - {label: Mapa (embed URL), name: map_embed_url, widget: string, required: false}
+              - {label: Instagram URL, name: instagram, widget: string, required: false}
+              - {label: Facebook URL, name: facebook, widget: string, required: false}
