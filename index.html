@@ -38,29 +38,56 @@
 <section id="menu" class="section container">
   <h2>Menú destacado</h2>
   <p class="lead">Algunas de nuestras opciones más pedidas.</p>
+
   <div class="grid-3">
+    <!-- Card: Café -->
     <div class="card">
-      <img src="assets/cappuccino-2_1200x.webp" alt="Capuccino">
+      <img data-src="menu.cafe.card_image" src="assets/cappuccino-2_1200x.webp" alt="Café">
       <div class="p">
-        <div class="menu-item"><span>Capuccino</span><strong>$3.200</strong></div>
-        <div class="menu-item"><span>Flat White</span><strong>$3.300</strong></div>
-        <div class="menu-item"><span>Latte Vainilla</span><strong>$3.500</strong></div>
+        <h3>Café</h3>
+        <ul class="menu-list">
+          <template data-repeat="menu.cafe.items">
+            <li class="menu-item">
+              <span data-bind="name">Nombre</span>
+              <strong data-bind="price">$0</strong>
+              <div class="menu-desc" data-bind="description"></div>
+            </li>
+          </template>
+        </ul>
       </div>
     </div>
+
+    <!-- Card: Pastelería -->
     <div class="card">
-      <img src="assets/medialunas-manteca.webp" alt="Medialunas">
+      <img data-src="menu.pasteleria.card_image" src="assets/medialunas-manteca.webp" alt="Pastelería">
       <div class="p">
-        <div class="menu-item"><span>Medialunas (x2)</span><strong>$2.400</strong></div>
-        <div class="menu-item"><span>Tostado jamón y queso</span><strong>$3.900</strong></div>
-        <div class="menu-item"><span>Budín casero</span><strong>$3.300</strong></div>
+        <h3>Pastelería</h3>
+        <ul class="menu-list">
+          <template data-repeat="menu.pasteleria.items">
+            <li class="menu-item">
+              <span data-bind="name">Nombre</span>
+              <strong data-bind="price">$0</strong>
+              <div class="menu-desc" data-bind="description"></div>
+            </li>
+          </template>
+        </ul>
       </div>
     </div>
+
+    <!-- Card: Brunch -->
     <div class="card">
-      <img src="assets/Brunch.jpg" alt="Brunch">
+      <img data-src="menu.brunch.card_image" src="assets/Brunch.jpg" alt="Brunch">
       <div class="p">
-        <div class="menu-item"><span>Combo Brunch</span><strong>$8.900</strong></div>
-        <div class="menu-item"><span>Ensalada del día</span><strong>$5.900</strong></div>
-        <div class="menu-item"><span>Avocado toast</span><strong>$5.400</strong></div>
+        <h3>Brunch</h3>
+        <ul class="menu-list">
+          <template data-repeat="menu.brunch.items">
+            <li class="menu-item">
+              <span data-bind="name">Nombre</span>
+              <strong data-bind="price">$0</strong>
+              <div class="menu-desc" data-bind="description"></div>
+            </li>
+          </template>
+        </ul>
       </div>
     </div>
   </div>
