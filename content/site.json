@@ -8,7 +8,7 @@
   },
   "menu": {
     "cafe": {
-      "card_image": "/static/img/cafe_card.jpg",
+      "card_image": "/static/img/cappuccino-2_1200x.webp",
       "items": [
         { "name": "Capuccino", "description": "Con espuma perfecta", "price": 3800 },
         { "name": "Flat White", "description": "Doble espresso + leche", "price": 3300 },
