@@ -7,38 +7,34 @@
     "image": "/static/img/hero.jpg"
   },
   "menu": {
-    "items": [
-      {
-        "name": "Espresso Doble",
-        "description": "Blend de la casa",
-        "price": 3200
-      },
-      {
-        "name": "Capuccino",
-        "description": "Con espuma perfecta",
-        "price": 3800
-      },
-      {
-        "name": "Medialunas x2",
-        "description": "Manteca / Grasa",
-        "price": 2800
-      },
-      {
-        "name": "Brunch Aroma",
-        "description": "Tostadas, huevos, jugo y café",
-        "price": 8900
-      }
-    ]
+    "cafe": {
+      "card_image": "/static/img/cafe_card.jpg",
+      "items": [
+        { "name": "Capuccino", "description": "Con espuma perfecta", "price": 3800 },
+        { "name": "Flat White", "description": "Doble espresso + leche", "price": 3300 },
+        { "name": "Latte Vainilla", "description": "Shot de vainilla", "price": 3500 }
+      ]
+    },
+    "pasteleria": {
+      "card_image": "/static/img/pasteleria_card.jpg",
+      "items": [
+        { "name": "Medialunas (x2)", "description": "Manteca o grasa", "price": 2800 },
+        { "name": "Budín casero", "description": "Sabor del día", "price": 3300 },
+        { "name": "Tostado J&Q", "description": "Pan de miga", "price": 3900 }
+      ]
+    },
+    "brunch": {
+      "card_image": "/static/img/brunch_card.jpg",
+      "items": [
+        { "name": "Combo Brunch", "description": "Tostadas, huevos, jugo y café", "price": 8900 },
+        { "name": "Ensalada del día", "description": "Fresca y de estación", "price": 5900 },
+        { "name": "Avocado toast", "description": "Palta + topping", "price": 5400 }
+      ]
+    }
   },
   "testimonials": [
-    {
-      "author": "Lucía P.",
-      "text": "El mejor capuccino del centro. Atención 10/10."
-    },
-    {
-      "author": "Julián M.",
-      "text": "Las medialunas salen siempre calentitas. Volveré!"
-    }
+    { "author": "Lucía P.", "text": "El mejor capuccino del centro. Atención 10/10." },
+    { "author": "Julián M.", "text": "Las medialunas salen siempre calentitas. Volveré!" }
   ],
   "hours": {
     "weekdays": "Lun–Vie 08:00–20:00",
